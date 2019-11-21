@@ -1,0 +1,17 @@
+.promo {
+  padding-top: 33px;
+
+  background: url("../img/promo-bg.png") center no-repeat #1b2d37;
+}
+
+@media screen and (max-width: $desktopWidth) {
+  .promo {
+    padding-top: 19px;
+  }
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .promo {
+    padding-top: 16px;
+  }
+}

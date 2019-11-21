@@ -1,0 +1,16 @@
+.button {
+  box-sizing: border-box;
+  padding: 0 10px;
+
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -0.06em;
+
+  border-radius: 5px;
+}
+
+.button--transparent {
+  background-color: transparent;
+}

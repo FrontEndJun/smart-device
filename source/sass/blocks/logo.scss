@@ -1,0 +1,51 @@
+.logo {
+  display: flex;
+  padding-left: 10px;
+}
+
+.logo__image {
+  width: 52px;
+  height: 52px;
+  margin-right: 14px;
+}
+
+.logo__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+}
+
+.logo__main-text {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  color: #ffffff;
+  letter-spacing: -0.1em;
+}
+
+.logo__add-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #788891;
+  font-style: normal;
+}
+
+@media screen and (max-width: $desktopWidth) {
+  .logo {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .logo__image {
+    width: 38px;
+    height: 38px;
+    margin-right: 14px;
+  }
+
+  .logo__text-wrapper {
+    display: none;
+  }
+}
