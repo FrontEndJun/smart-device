@@ -1,0 +1,94 @@
+.about-company {
+  padding-top: 105px;
+  padding-bottom: 101px;
+  color: #666666;
+}
+
+.about-company__inner {
+  padding-left: 180px;
+  padding-bottom: 10px;
+  background: url("../img/year.png") no-repeat #ffffff;
+  background-position: -30px 5px;
+}
+
+.about-company h2 {
+  margin: 0 0 22px;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 50px;
+}
+
+.about-company p {
+  margin: 0;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 37px;
+  letter-spacing: 0.018em;
+}
+
+.about-company__button {
+  border: 1px solid $mainBGColor;
+  width: 180px;
+  padding: 13px 0;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  color: #00b2ff;
+}
+
+.about-company__text-continue {
+  display: none;
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .about-company {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .about-company__inner {
+    padding-left: 186px;
+    padding-bottom: 10px;
+    background: url("../img/year-tablet.png") no-repeat #ffffff;
+    background-position: -25px -2px;
+  }
+
+  .about-company__text-continue {
+    display: initial;
+  }
+
+  .about-company__text-desktop {
+    display: none;
+  }
+
+  .about-company h2 {
+    margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 140%;
+  }
+
+  .about-company p {
+    letter-spacing: 0;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .about-company__inner {
+    padding-left: 0;
+    padding-bottom: 10px;
+    background: none;
+  }
+
+  .about-company h2 {
+    margin-bottom: 20px;
+  }
+
+  .about-company p {
+    margin-bottom: 45px;
+  }
+}

@@ -1,16 +1,27 @@
 .button {
+  display: block;
   box-sizing: border-box;
   padding: 0 10px;
 
   font-weight: bold;
   text-align: center;
-  color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: -0.06em;
+  letter-spacing: 0.05em;
 
   border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  color: #ffffff;
 }
 
 .button--transparent {
   background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.button--filled {
+  background-color: $mainBGColor;
 }

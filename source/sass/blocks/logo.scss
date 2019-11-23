@@ -1,6 +1,10 @@
 .logo {
   display: flex;
-  padding-left: 10px;
+  fill: $mainBGColor;
+}
+
+.logo:hover .logo__image {
+  fill: #ff811a;
 }
 
 .logo__image {
@@ -20,7 +24,6 @@
   font-size: 25px;
   line-height: 29px;
   color: #ffffff;
-  letter-spacing: -0.1em;
 }
 
 .logo__add-text {

@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   margin: 0;
-  margin-right: 52px;
+  margin-right: 51px;
   margin-left: auto;
   padding: 0;
 
@@ -28,13 +28,17 @@
 
   font-size: 16px;
   font-family: "PT Mono", "Arial", sans-serif;
-  color: #ffffff;
+  color: $mainTextColor;
 }
 
 .header__link svg {
   margin-right: 16px;
 
-  fill: #00b2ff;
+  fill: $mainBGColor;
+}
+
+.header__link:hover svg {
+  fill: #ff811a;
 }
 
 .header__button {
@@ -43,11 +47,17 @@
   padding-bottom: 14px;
 
   line-height: 16px;
+  color: $mainTextColor;
 
-  border: 1px solid #ffffff;
+  border: 1px solid;
+  border-color: #ffffff;
 }
 
-@media screen and (max-width: $desktopWidth) {
+.header__button:hover {
+  border-color: #ff811a;
+}
+
+@media screen and (max-width: $tabletWidth) {
   .header__info {
     margin-right: 0;
   }
@@ -79,7 +89,7 @@
   }
 }
 
-@media screen and (max-width: $tabletWidth) {
+@media screen and (max-width: $phoneWidth) {
   .header__info li {
     margin-right: 23px;
   }

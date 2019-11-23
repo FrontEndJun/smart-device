@@ -1,0 +1,89 @@
+.advantage {
+  display: flex;
+  flex-direction: column;
+  min-height: 299px;
+  position: relative;
+  box-sizing: border-box;
+  width: calc(50% - 30px);
+  border-left: 3px solid $mainBGColor;
+  padding: 95px 41px 65px;
+  cursor: pointer;
+}
+
+.advantage:hover,
+.advantage:focus {
+  background-color: $mainBGColor;
+
+  & svg {
+    fill: #ffffff;
+  }
+
+  & h3,
+  & p {
+    color: $mainTextColor;
+  }
+}
+
+.advantage svg {
+  position: absolute;
+  top: 41px;
+  left: 42px;
+  fill: $mainBGColor;
+  margin-bottom: 18px;
+}
+
+.advantage h3 {
+  color: $mainBGColor;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  margin: 0 0 16px;
+}
+
+.advantage p {
+  color: #666666;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .advantage {
+    border-left-width: 2px;
+    padding: 67px 21px 21px 25px;
+    min-height: 232px;
+  }
+
+  .advantage h3 {
+    margin: 0 0 9px;
+  }
+
+  .advantage svg {
+    top: 25px;
+    left: 24px;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .advantage {
+    width: 100%;
+    min-height: 232px;
+    padding: 69px 23px 11px 25px;
+  }
+
+  .advantage h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .advantage svg {
+    top: 25px;
+    left: 24px;
+  }
+
+  .advantage p {
+  }
+}

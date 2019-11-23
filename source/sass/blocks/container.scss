@@ -1,18 +1,24 @@
 .container {
-  max-width: 1420px;
+  box-sizing: border-box;
+  max-width: 1451px;
   margin: 0 auto;
   padding: 0 20px;
-}
 
-@media screen and (max-width: $desktopWidth) {
-  .container {
-    max-width: 720px;
+  &--s {
+    max-width: 1210px;
   }
 }
 
 @media screen and (max-width: $tabletWidth) {
   .container {
-    min-width: 290px;
+    max-width: 760px;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .container {
+    max-width: 100%;
+    min-width: 320px;
     padding: 0 15px;
   }
 }

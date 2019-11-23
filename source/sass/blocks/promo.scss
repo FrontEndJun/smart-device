@@ -1,17 +1,122 @@
+// @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+// }
+
 .promo {
   padding-top: 33px;
-
-  background: url("../img/promo-bg.png") center no-repeat #1b2d37;
+  padding-bottom: 100px;
+  background-color: #1b2d37;
+  background-image: url("../img/promo-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
 }
 
-@media screen and (max-width: $desktopWidth) {
-  .promo {
-    padding-top: 19px;
+.promo__header {
+  margin-bottom: 173px;
+}
+
+.promo__content-wrapper {
+  display: flex;
+}
+
+.promo__column {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 725px;
+}
+
+.promo__title {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin: 58px 0 28px 0;
+}
+
+.promo__text {
+  margin: 0 0 42px 93px;
+
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 1px;
+    background: #ffffff;
+    left: -94px;
+    top: 16px;
   }
+}
+
+.promo__button {
+  color: $mainTextColor;
+  margin-left: 93px;
+  max-width: 407px;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 18px 0;
+  font-weight: bold;
+}
+
+.promo__image-wrapper {
+  position: relative;
+  margin-right: -15px;
+  left: 61px;
+
+  &::before {
+    top: -112px;
+    right: -49px;
+    content: "";
+    position: absolute;
+    width: 671px;
+    height: 633px;
+    background: url("../img/rect.png") no-repeat transparent;
+  }
+}
+
+.promo__image {
+  width: 705px;
+  height: 515px;
+}
+
+.promo__hint {
+  display: inline-block;
+  transform: rotate(-90deg);
+  align-self: flex-start;
+  margin-top: 132px;
+  margin-left: -40px;
+  font-family: "PT Mono", "Arial", sans-serif;
+
+  line-height: 16px;
+
+  opacity: 0.5;
 }
 
 @media screen and (max-width: $tabletWidth) {
   .promo {
+    padding-top: 19px;
+  }
+
+  // .promo__image {
+  //   width: 465px;
+  //   height: 340px;
+  // }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .promo {
     padding-top: 16px;
   }
+
+  // .promo__image {
+  //   width: 301px;
+  //   height: 220px;
+  // }
 }

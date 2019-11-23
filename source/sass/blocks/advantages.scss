@@ -1,0 +1,37 @@
+.advantages {
+  padding-top: 112px;
+}
+
+.advantages__list {
+  align-content: stretch;
+  align-items: stretch;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px -15px 0;
+}
+
+.advantages__list-item {
+  margin: 30px 15px 0;
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .advantages {
+    padding-top: 54px;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .advantages {
+    padding-top: 37px;
+  }
+
+  .advantages__list-item {
+    margin: 20px 0 0;
+  }
+
+  .advantages__list {
+    margin: -20px 0 0;
+  }
+}

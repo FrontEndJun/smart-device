@@ -1,0 +1,88 @@
+.service {
+  position: relative;
+  box-sizing: border-box;
+  width: calc(100% / 3 - 30px);
+
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.service:hover::after {
+  animation: animateHover 1s linear infinite;
+}
+
+.service::before {
+  content: "";
+  position: absolute;
+  width: 63px;
+  height: 63px;
+  bottom: 0;
+  right: 0;
+  background-color: $mainBGColor;
+}
+
+.service::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  bottom: 27px;
+  right: 27px;
+  border: 2px solid #ffffff;
+  border-top: none;
+  border-left: none;
+  transform: translateX(0) rotate(-45deg);
+}
+
+.service h3 {
+  margin: 0;
+  max-width: 160px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.service--ligth {
+  background-image: url("../img/light.png");
+}
+
+.service--production {
+  background-image: url("../img/production.png");
+}
+
+.service--mounting {
+  background-image: url("../img/mounting.png");
+}
+
+@keyframes animateHover {
+  0% {
+    transform: translateX(0) rotate(-45deg);
+  }
+
+  25% {
+    transform: translateX(15px) rotate(-45deg);
+  }
+
+  50% {
+    transform: translateX(7px) rotate(-45deg);
+  }
+
+  75% {
+    transform: translateX(15px) rotate(-45deg);
+  }
+
+  100% {
+    transform: translateX(0) rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .service {
+    width: calc(100% - 30px);
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+}
