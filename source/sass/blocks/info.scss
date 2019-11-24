@@ -1,0 +1,102 @@
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__title {
+  color: #000000;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  // width: 100%;
+  margin: 0 0 26px;
+}
+
+.info__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.info__list--add {
+  margin-left: 65px;
+}
+
+.info__item a {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+
+  color: #1b2d37;
+
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.info-wrapper {
+  display: flex;
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .info-wrapper {
+    flex-direction: column;
+  }
+
+  .info__list--add {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .info {
+    padding-bottom: 23px;
+    position: relative;
+    width: 100%;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 50vw;
+      height: 1px;
+      background-color: #626962;
+      bottom: 0;
+      z-index: 1;
+    }
+
+    &::before {
+      right: 50%;
+    }
+
+    &::after {
+      left: 50%;
+    }
+  }
+
+  .info__title {
+    position: relative;
+    padding: 28px 0;
+    margin-bottom: 0;
+
+    &:hover::after {
+      opacity: 0.8;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      background: url("../img/cross.png") center no-repeat transparent;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      opacity: 0.5;
+    }
+  }
+}
