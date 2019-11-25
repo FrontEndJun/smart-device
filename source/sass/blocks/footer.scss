@@ -1,5 +1,6 @@
 .footer {
   overflow-x: hidden;
+
   background: #fafafa;
 }
 
@@ -13,19 +14,22 @@
 
 .footer__main {
   position: relative;
-  padding: 65px 0 57px;
+
   display: flex;
   justify-content: space-between;
+  padding: 65px 0 57px;
 
   &::before,
   &::after {
-    position: absolute;
     content: "";
-    width: 50vw;
-    height: 1px;
-    background-color: rgba($color: #626962, $alpha: 0.2);
+    position: absolute;
     bottom: 0;
     z-index: 1;
+
+    width: 50vw;
+    height: 1px;
+
+    background-color: rgba($color: #626962, $alpha: 0.2);
   }
 
   &::before {
@@ -43,19 +47,20 @@
 
 .footer__down-section {
   display: flex;
-  padding: 14px 0;
   justify-content: space-between;
+  padding: 14px 0;
 }
 
 .footer__places {
-  max-width: 50%;
+  display: flex;
   flex-grow: 1;
   justify-content: space-between;
-  display: flex;
-  list-style: none;
-  padding: 0;
+  max-width: 50%;
   margin: 0;
   margin-left: auto;
+  padding: 0;
+
+  list-style: none;
 }
 
 .footer__places a:hover,
@@ -67,21 +72,15 @@
   margin-right: 72px;
 }
 
-.footer__licence--bottom {
-  // margin-right: 143px;
-}
-
 .footer__down-section,
 .footer__licence,
 .footer__places a {
-  color: rgba($color: #1b2d37, $alpha: 0.5);
-  font-family: "PT Mono", "Arial", sans-serif;
-
   font-size: 13px;
   line-height: 24px;
-
-  letter-spacing: 0.04em;
+  font-family: "PT Mono", "Arial", sans-serif;
+  color: rgba($color: #1b2d37, $alpha: 0.5);
   text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .footer__licence--up {
@@ -109,23 +108,26 @@
   }
 
   .footer__links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 19px 0 26px;
     margin-bottom: 32px;
+    padding: 19px 0 26px;
 
     &::before,
     &::after {
-      position: absolute;
       content: "";
-      width: 50vw;
-      height: 1px;
-      background-color: rgba($color: #626962, $alpha: 0.2);
+      position: absolute;
       bottom: 0;
       z-index: 1;
+
+      width: 50vw;
+      height: 1px;
+
+      background-color: rgba($color: #626962, $alpha: 0.2);
     }
 
     &::before {
@@ -153,10 +155,10 @@
 
 @media screen and (max-width: $phoneWidth) {
   .footer__links {
-    padding: 46px 0 54px;
     flex-direction: column;
     align-items: center;
     margin-bottom: 0;
+    padding: 46px 0 54px;
   }
 
   .footer__down-section {
@@ -168,8 +170,8 @@
   }
 
   .footer__places {
-    margin-top: -21px;
     flex-direction: column;
     align-items: center;
+    margin-top: -21px;
   }
 }

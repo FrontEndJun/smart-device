@@ -1,6 +1,5 @@
 {
   "exclude": [".git/**", "node_modules/**", "style.scss"],
-
   "always-semicolon": true,
   "block-indent": "  ",
   "color-case": "lower",

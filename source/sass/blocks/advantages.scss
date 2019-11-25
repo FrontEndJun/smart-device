@@ -3,13 +3,14 @@
 }
 
 .advantages__list {
-  align-content: stretch;
-  align-items: stretch;
-  list-style: none;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
+  align-content: stretch;
+  align-items: stretch;
   margin: -30px -15px 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .advantages__list-item {

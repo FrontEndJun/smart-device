@@ -1,9 +1,10 @@
 .socials {
-  margin: 0;
-  padding: 0;
   display: flex;
-  list-style: none;
+  margin: 0;
   margin-left: -16px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .socials__item {
@@ -12,15 +13,16 @@
 }
 
 .socials__item a {
-  font-size: 0;
   display: block;
   width: 27px;
   height: 27px;
-  opacity: 0.3;
+
+  font-size: 0;
 
   background-color: #ffffff;
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
 
   &:hover,
   &:focus {

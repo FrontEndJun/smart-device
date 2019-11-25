@@ -57,8 +57,9 @@
 @media screen and (max-width: $phoneWidth) {
   .info {
     position: relative;
-    padding-bottom: 0;
+
     width: 100%;
+    padding-bottom: 0;
 
     &::before,
     &::after {

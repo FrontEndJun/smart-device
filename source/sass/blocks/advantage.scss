@@ -1,12 +1,14 @@
 .advantage {
+  position: relative;
+
   display: flex;
   flex-direction: column;
-  min-height: 299px;
-  position: relative;
   box-sizing: border-box;
   width: calc(50% - 30px);
-  border-left: 3px solid $mainBGColor;
+  min-height: 299px;
   padding: 95px 41px 65px;
+
+  border-left: 3px solid $mainBGColor;
   cursor: pointer;
 }
 
@@ -28,33 +30,38 @@
   position: absolute;
   top: 41px;
   left: 42px;
-  fill: $mainBGColor;
+
   margin-bottom: 18px;
+
+  fill: $mainBGColor;
 }
 
 .advantage h3 {
-  color: $mainBGColor;
+  margin: 0 0 16px;
+
   font-weight: normal;
   font-size: 24px;
   line-height: 34px;
-  margin: 0 0 16px;
+  color: $mainBGColor;
 }
 
 .advantage p {
-  color: #666666;
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-style: normal;
+  margin: 0;
+
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  margin: 0;
+  font-family: "PT Mono", "Arial", sans-serif;
+  color: #666666;
+  font-style: normal;
 }
 
 @media screen and (max-width: $tabletWidth) {
   .advantage {
-    border-left-width: 2px;
-    padding: 67px 21px 21px 25px;
     min-height: 232px;
+    padding: 67px 21px 21px 25px;
+
+    border-left-width: 2px;
   }
 
   .advantage h3 {
@@ -75,15 +82,13 @@
   }
 
   .advantage h3 {
-    font-size: 20px;
     margin-bottom: 6px;
+
+    font-size: 20px;
   }
 
   .advantage svg {
     top: 25px;
     left: 24px;
-  }
-
-  .advantage p {
   }
 }

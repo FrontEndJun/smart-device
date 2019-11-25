@@ -1,7 +1,6 @@
 .service {
   box-sizing: border-box;
   width: calc(100% / 3 - 30px);
-
   background-color: inherit;
   background-repeat: no-repeat;
   background-position: center;
@@ -20,20 +19,20 @@
 .service a::before {
   content: "";
   position: absolute;
+  right: 0;
+  bottom: 0;
   width: 63px;
   height: 63px;
-  bottom: 0;
-  right: 0;
   background-color: $mainBGColor;
 }
 
 .service a::after {
   content: "";
   position: absolute;
+  right: 27px;
+  bottom: 27px;
   width: 6px;
   height: 6px;
-  bottom: 27px;
-  right: 27px;
   border: 2px solid #ffffff;
   border-top: none;
   border-left: none;
@@ -41,8 +40,8 @@
 }
 
 .service h3 {
-  margin: 0;
   max-width: 160px;
+  margin: 0;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
@@ -86,7 +85,4 @@
   .service {
     width: calc(100% - 30px);
   }
-}
-
-@media screen and (max-width: $phoneWidth) {
 }

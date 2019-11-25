@@ -5,6 +5,7 @@
 
   font-weight: bold;
   text-align: center;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 
@@ -14,7 +15,6 @@
   &:focus {
     opacity: 0.6;
   }
-  color: #ffffff;
 }
 
 .button--transparent {
