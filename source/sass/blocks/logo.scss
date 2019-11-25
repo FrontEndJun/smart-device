@@ -3,7 +3,8 @@
   fill: $mainBGColor;
 }
 
-.logo:hover .logo__image {
+.logo:hover .logo__image,
+.logo:focus .logo__image {
   fill: #ff811a;
 }
 

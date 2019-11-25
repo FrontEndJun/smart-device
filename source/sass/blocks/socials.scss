@@ -22,7 +22,8 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.5;
   }
 }
@@ -30,9 +31,11 @@
 .socials-vk {
   background-image: url("../img/vk.png");
 }
+
 .socials-ok {
   background-image: url("../img/ok.png");
 }
+
 .socials-fb {
   background-image: url("../img/fb.png");
 }

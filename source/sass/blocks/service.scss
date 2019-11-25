@@ -1,5 +1,4 @@
 .service {
-  position: relative;
   box-sizing: border-box;
   width: calc(100% / 3 - 30px);
 
@@ -9,11 +8,16 @@
   background-size: cover;
 }
 
-.service:hover::after {
+.service a:hover::after,
+.service a:focus::after {
   animation: animateHover 1s linear infinite;
 }
 
-.service::before {
+.services a {
+  position: relative;
+}
+
+.service a::before {
   content: "";
   position: absolute;
   width: 63px;
@@ -23,7 +27,7 @@
   background-color: $mainBGColor;
 }
 
-.service::after {
+.service a::after {
   content: "";
   position: absolute;
   width: 6px;

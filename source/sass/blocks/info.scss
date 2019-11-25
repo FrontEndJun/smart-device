@@ -34,7 +34,8 @@
 
   opacity: 0.5;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 }
@@ -69,7 +70,7 @@
       width: 50vw;
       height: 1px;
 
-      background-color: #626962;
+      background-color: rgba($color: #626962, $alpha: 0.2);
     }
 
     &::before {
@@ -89,7 +90,8 @@
 
     cursor: pointer;
 
-    &:hover::after {
+    &:hover::after,
+    &:focus::after {
       opacity: 1;
     }
 
