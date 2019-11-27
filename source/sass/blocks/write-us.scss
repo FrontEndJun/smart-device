@@ -1,18 +1,17 @@
 .write-us {
-  padding-top: 92px;
-  padding-bottom: 113px;
+  padding-top: 93px;
+  padding-bottom: 116px;
 
   background: $mainBGColor;
 }
 
 .write-us__inner {
   display: flex;
-  justify-content: space-between;
 }
 
-.write-us__content-wrapper,
-.write-us__image-wrapper {
+.write-us__content-wrapper {
   width: calc(50% - 15px);
+  margin-left: auto;
 }
 
 .write-us__form-row {
@@ -23,10 +22,9 @@
   margin-bottom: 40px;
 
   &--last {
-    position: relative;
-    top: 6px;
-
     margin-bottom: 0;
+    position: relative;
+    top: 3px;
   }
 }
 
@@ -80,17 +78,17 @@
   }
 }
 
-.write-us__title {
+.write-us h2 {
   margin: 0 0 9px;
-
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
 }
 
-.write-us__text {
+.write-us p {
   display: block;
-  margin-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 52px;
 
   font-weight: normal;
   font-size: 16px;

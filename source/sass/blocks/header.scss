@@ -1,6 +1,19 @@
 .header {
+  position: absolute;
+  top: 33px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.header__inner {
   display: flex;
   align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  margin-left: auto;
 }
 
 .header__info {
@@ -58,6 +71,10 @@
 }
 
 @media screen and (max-width: $tabletWidth) {
+  .header {
+    top: 19px;
+  }
+
   .header__info {
     margin-right: 0;
   }

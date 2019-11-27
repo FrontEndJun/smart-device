@@ -1,10 +1,10 @@
 .service {
   box-sizing: border-box;
   width: calc(100% / 3 - 30px);
-  background-color: inherit;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #1b2d37;
 }
 
 .service a:hover::after,

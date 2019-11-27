@@ -37,13 +37,13 @@
   font-style: normal;
 }
 
-@media screen and (max-width: $desktopWidth) {
+@media screen and (max-width: $tabletWidth) {
   .logo {
     padding-left: 0;
   }
 }
 
-@media screen and (max-width: $tabletWidth) {
+@media screen and (max-width: $phoneWidth) {
   .logo__image {
     width: 38px;
     height: 38px;

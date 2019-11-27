@@ -2,6 +2,7 @@
 
 (function () {
   var toggleSection = document.querySelectorAll('.info__title');
+  var modals = document.querySelectorAll('.modal');
 
   if (toggleSection) {
     toggleSection.forEach(function (elem) {
@@ -30,8 +31,6 @@
     }
   }
 
-  var modals = document.querySelectorAll('.modal');
-
   modals.forEach(function (elem) {
     elem.addEventListener('click', closeModalHandler);
   });
@@ -45,6 +44,7 @@
 
     if (tg === closeButton || tg === overlay) {
       current.classList.add('visually-hidden');
+      current.querySelector("#modal-form").reset();
     }
   }
 })();
