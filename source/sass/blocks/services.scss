@@ -1,5 +1,5 @@
 .services {
-  padding: 88px 0 127px;
+  padding: 88px 0 96px;
 
   background-color: #1b2d37;
 }
@@ -30,13 +30,13 @@
 }
 
 .services__item {
-  margin: 0 15px;
+  margin: 0 15px 30px;
 }
 
 @media screen and (max-width: $tabletWidth) {
   .services {
     padding-top: 50px;
-    padding-bottom: 78px;
+    padding-bottom: 32px;
   }
 
   .services h2 {
@@ -51,12 +51,8 @@
     padding-top: 38px;
   }
 
-  .services__list {
-    margin-top: -46px;
-  }
-
   .services__item {
-    margin-top: 46px;
+    margin-bottom: 46px;
   }
 }
 

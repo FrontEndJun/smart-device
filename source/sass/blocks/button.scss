@@ -8,12 +8,14 @@
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-
+  border: 1px solid transparent;
   border-radius: 5px;
 
   &:hover,
   &:focus {
-    opacity: 0.6;
+    border-color: #ff811a;
+    color: #ff811a;
+    background: transparent;
   }
 }
 
@@ -25,3 +27,4 @@
 .button--filled {
   background-color: $mainBGColor;
 }
+

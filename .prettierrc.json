@@ -1,0 +1,15 @@
+{
+  "exclude": ["*.js"],
+  "tabWidth": 2,
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": "*.js",
+      "options": {
+        "singleQuote": true,
+        "bracketSpacing": true,
+        "arrowParens": "always"
+      }
+    }
+  ]
+}

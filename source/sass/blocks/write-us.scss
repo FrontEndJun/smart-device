@@ -1,8 +1,17 @@
 .write-us {
-  padding-top: 93px;
+  padding-top: 92px;
   padding-bottom: 116px;
 
   background: $mainBGColor;
+  background-image: url("../img/plane.png"), url("../img/writeUsBG.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 355px) 161px, calc(50% - 397px) -61px;
+
+  @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
+    background-image: url("../img/plane@2x.png"),
+      url("../img/writeUsBG@2x.png");
+    background-size: auto, 670px 641px;
+  }
 }
 
 .write-us__inner {
@@ -10,6 +19,7 @@
 }
 
 .write-us__content-wrapper {
+  min-width: 570px;
   width: calc(50% - 15px);
   margin-left: auto;
 }
@@ -48,7 +58,7 @@
   & textarea {
     width: 100%;
     height: 154px;
-
+    overflow: auto;
     resize: none;
   }
 
@@ -99,8 +109,19 @@
 
 @media screen and (max-width: $tabletWidth) {
   .write-us {
-    padding-top: 83px;
-    padding-bottom: 103px;
+    padding-top: 81px;
+    padding-bottom: 109px;
+    background-image: none;
+  }
+
+  .write-us h2 {
+    font-size: 32px;
+    line-height: 45px;
+    margin-bottom: 15px;
+  }
+
+  .write-us p {
+    margin-bottom: 54px;
   }
 
   .write-us__image-wrapper {
@@ -108,8 +129,31 @@
   }
 
   .write-us__content-wrapper {
+    min-width: auto;
     width: 100%;
     padding: 0 65px;
+  }
+
+  .write-us__form {
+    display: flex;
+    flex-wrap: wrap;
+
+    & button {
+      padding-top: 14px;
+      padding-bottom: 14px;
+
+      font-family: inherit;
+    }
+
+    & textarea {
+      height: 160px;
+    }
+
+    & input,
+    & textarea {
+      box-sizing: border-box;
+      padding: 14px 16px;
+    }
   }
 }
 

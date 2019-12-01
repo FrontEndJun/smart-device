@@ -1,7 +1,6 @@
 .socials {
   display: flex;
   margin: 0;
-  margin-left: -16px;
   padding: 0;
 
   list-style: none;
@@ -9,7 +8,11 @@
 
 .socials__item {
   display: block;
-  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.socials__item.last {
+  margin-right: 0;
 }
 
 .socials__item a {

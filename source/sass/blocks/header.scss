@@ -1,9 +1,5 @@
 .header {
-  position: absolute;
-  top: 33px;
-  left: 0;
-  width: 100%;
-  z-index: 1;
+  padding: 33px 0;
 }
 
 .header__inner {
@@ -66,13 +62,10 @@
   border-color: #ffffff;
 }
 
-.header__button:hover {
-  border-color: #ff811a;
-}
 
 @media screen and (max-width: $tabletWidth) {
   .header {
-    top: 19px;
+    padding: 20px 0;
   }
 
   .header__info {
@@ -107,6 +100,10 @@
 }
 
 @media screen and (max-width: $phoneWidth) {
+  .header {
+    top: 16px;
+  }
+
   .header__info li {
     margin-right: 23px;
   }

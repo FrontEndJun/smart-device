@@ -14,6 +14,11 @@
 
 .services a {
   position: relative;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px 10px rgba($color: #ffffff, $alpha: 0.1);
+  }
 }
 
 .service a::before {

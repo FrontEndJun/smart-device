@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-.info__title {
+.info h3 {
   // width: 100%;
   margin: 0 0 26px;
 
@@ -36,7 +36,9 @@
 
   &:hover,
   &:focus {
-    opacity: 0.8;
+    color: #ff811a;
+    border-bottom: 1px dotted #ff811a;
+    opacity: 1;
   }
 }
 

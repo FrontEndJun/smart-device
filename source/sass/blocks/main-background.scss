@@ -1,0 +1,27 @@
+.main-background {
+  background-color: #1b2d37;
+  background-image: url("../img/promo-bg.png"), url("../img/promorect.png");
+  background-repeat: no-repeat;
+  background-position: center, calc(50% + 495px) 146px;
+  background-size: cover, auto;
+
+  @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
+    background-image: url("../img/promo-bg@2x.png"),
+      url("../img/promorect@2x.png");
+    background-size: auto, 670px 641px;
+  }
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .main-background {
+    background-position: center, 515px -38px;
+    background-size: cover, 535px 503px;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .main-background {
+    background-position: center, 515px -38px;
+    background-size: cover, 526px 484px;
+  }
+}

@@ -1,5 +1,5 @@
 .about-company {
-  padding-top: 105px;
+  padding-top: 75px;
   padding-bottom: 101px;
 
   color: #666666;
@@ -11,6 +11,10 @@
 
   background: url("../img/year.png") no-repeat #ffffff;
   background-position: -30px 5px;
+
+  @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
+    background-image: url("../img/year@2x.png");
+  }
 }
 
 .about-company h2 {
@@ -51,16 +55,20 @@
 
 @media screen and (max-width: $tabletWidth) {
   .about-company {
-    padding-top: 56px;
-    padding-bottom: 56px;
+    padding-top: 25px;
+    padding-bottom: 74px;
+    background: url("../img/year-tablet.png") no-repeat #ffffff;
+    background-position: 0 23px;
+
+    @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
+      background-image: url("../img/year-tablet@2x.png");
+    }
   }
 
   .about-company__inner {
     padding-bottom: 10px;
     padding-left: 186px;
-
-    background: url("../img/year-tablet.png") no-repeat #ffffff;
-    background-position: -25px -2px;
+    background: none;
   }
 
   .about-company__text-continue {
@@ -86,11 +94,13 @@
 }
 
 @media screen and (max-width: $phoneWidth) {
+  .about-company {
+    background: none;
+  }
+
   .about-company__inner {
     padding-bottom: 10px;
     padding-left: 0;
-
-    background: none;
   }
 
   .about-company h2 {

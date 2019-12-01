@@ -7,7 +7,7 @@
   width: calc(50% - 30px);
   min-height: 299px;
   padding: 95px 41px 65px;
-
+  border: 1px solid rgba($color: #000000, $alpha: 0.1);
   border-left: 3px solid $mainBGColor;
   cursor: pointer;
 }
@@ -59,7 +59,7 @@
 @media screen and (max-width: $tabletWidth) {
   .advantage {
     min-height: 232px;
-    padding: 67px 21px 21px 25px;
+    padding: 67px 20px 19px 25px;
 
     border-left-width: 2px;
   }
