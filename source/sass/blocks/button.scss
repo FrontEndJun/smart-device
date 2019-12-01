@@ -10,6 +10,7 @@
   letter-spacing: 0.05em;
   border: 1px solid transparent;
   border-radius: 5px;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -27,4 +28,3 @@
 .button--filled {
   background-color: $mainBGColor;
 }
-

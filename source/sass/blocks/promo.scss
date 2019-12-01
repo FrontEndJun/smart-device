@@ -90,6 +90,7 @@
   &:hover,
   &:focus {
     color: #ff811a;
+    opacity: 1;
   }
 }
 
@@ -147,8 +148,8 @@
 
 @media screen and (max-width: $phoneWidth) {
   .promo {
-    padding-top: 93px;
-    padding-bottom: 39px;
+    padding-top: 22px;
+    padding-bottom: 38px;
   }
 
   .promo__image-wrapper img {

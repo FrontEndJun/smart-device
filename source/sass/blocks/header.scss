@@ -52,6 +52,7 @@
 
 .header__button {
   min-width: 180px;
+  max-width: 180px;
   padding-top: 14px;
   padding-bottom: 14px;
 
@@ -101,7 +102,7 @@
 
 @media screen and (max-width: $phoneWidth) {
   .header {
-    top: 16px;
+    padding: 16px 0;
   }
 
   .header__info li {

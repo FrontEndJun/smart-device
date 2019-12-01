@@ -33,12 +33,13 @@
   height: 17px;
 
   font-size: 0;
-
+  opacity: 0.5;
   background: url("../img/close-cross.png") no-repeat center transparent;
   border: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
-    opacity: 0.5;
+    opacity: 1;
   }
 }

@@ -96,6 +96,8 @@
 @media screen and (max-width: $phoneWidth) {
   .about-company {
     background: none;
+    padding-top: 35px;
+    padding-bottom: 56px;
   }
 
   .about-company__inner {
@@ -105,9 +107,11 @@
 
   .about-company h2 {
     margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 39px;
   }
 
   .about-company p {
-    margin-bottom: 45px;
+    margin-bottom: 47px;
   }
 }

@@ -78,7 +78,9 @@
   .advantage {
     width: 100%;
     min-height: 232px;
-    padding: 69px 23px 11px 25px;
+    max-width: 310px;
+    padding: 69px 23px 23px 25px;
+    letter-spacing: -0.01em;
   }
 
   .advantage h3 {
@@ -90,5 +92,9 @@
   .advantage svg {
     top: 25px;
     left: 24px;
+  }
+
+  .advantage .space {
+    display: none;
   }
 }

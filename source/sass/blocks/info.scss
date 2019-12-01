@@ -85,9 +85,8 @@
     }
   }
 
-  .info__title {
+  .info h3 {
     position: relative;
-
     margin-bottom: 0;
     padding: 28px 0;
 
@@ -105,16 +104,27 @@
       right: 0;
 
       width: 16px;
-      height: 16px;
+      height: 2px;
 
       background: url("../img/cross.png") center no-repeat transparent;
       transform: translateY(-50%);
-      opacity: 0.5;
+      opacity: 0.4;
     }
   }
 
   .info-wrapper {
-    padding-bottom: 23px;
+    padding-bottom: 27px;
+    padding-top: 3px;
+  }
+
+  .info.hide {
+    & .info-wrapper {
+      display: none;
+    }
+
+    h3::after {
+      height: 16px;
+    }
   }
 
   .info-wrapper--hide {

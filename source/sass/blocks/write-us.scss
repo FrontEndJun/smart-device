@@ -76,6 +76,7 @@
 
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid transparent;
+    border-radius: 0;
 
     &::placeholder {
       color: #ffffff;
@@ -158,21 +159,40 @@
 }
 
 @media screen and (max-width: $phoneWidth) {
+  .write-us {
+    padding-top: 29px;
+    padding-bottom: 12px;
+  }
+
   .write-us__content-wrapper {
     padding: 0;
+  }
+
+  .write-us h2 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .write-us p {
+    margin-bottom: 24px;
   }
 
   .write-us__form {
     flex-direction: column;
 
     & input,
-    & label,
-    & button {
+    & label {
       width: 100%;
       margin-bottom: 30px;
     }
 
+    & button {
+      width: 100%;
+      margin-bottom: 28px;
+    }
+
     & textarea {
+      height: 104px;
       margin-bottom: 30px;
     }
   }

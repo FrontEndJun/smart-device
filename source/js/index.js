@@ -6,7 +6,7 @@
   var body = document.querySelector('body');
   var telInputs = document.querySelectorAll('input[type="tel"]');
   telInputs.forEach(function (input) {
-    return new window.IMask.InputMask(input, {
+    return new window.IMask(input, {
       mask: '+{7}(000)000-00-00'
     });
   });
@@ -29,8 +29,14 @@
 
   function toggleHandler(e) {
     e.preventDefault();
-    var section = e.target.parentNode.querySelector('.info-wrapper');
-    section.classList.toggle('info-wrapper--hide');
+    toggleSection.forEach(function (elm) {
+      var section = elm.parentNode;
+      if (elm === e.target) {
+        section.classList.toggle('hide');
+      } else {
+        section.classList.add('hide');
+      }
+    });
   }
 
   var writeUsBtn = document.querySelector('.js-write-us');
@@ -55,6 +61,8 @@
         });
         if (localStorage.getItem(elm.name)) {
           elm.value = localStorage.getItem(elm.name);
+        } else {
+          elm.focus();
         }
       });
       modal.classList.remove('visually-hidden');
