@@ -92,8 +92,7 @@
 
     cursor: pointer;
 
-    &:hover::after,
-    &:focus::after {
+    &:hover::after {
       opacity: 1;
     }
 

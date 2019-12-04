@@ -4,6 +4,7 @@
   padding-left: 40px;
 
   font-family: "PT Mono", "Arial", sans-serif;
+  cursor: pointer;
 
   & input:checked + .checkbox__indicator::before {
     display: block;
@@ -21,8 +22,8 @@
 
 .checkbox__indicator {
   position: absolute;
-  top: 3px;
-  left: 2px;
+  top: 5px;
+  left: 7px;
 
   display: block;
   box-sizing: border-box;
@@ -44,5 +45,22 @@
     border-right: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff;
     transform: rotate(45deg);
+  }
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .checkbox {
+    padding-left: 44px;
+    padding-top: 4px;
+  }
+
+  .checkbox__indicator {
+    top: 7px;
+    left: 10px;
+  }
+}
+@media screen and (max-width: $phoneWidth) {
+  input {
+    display: none;
   }
 }

@@ -10,6 +10,7 @@
   border: 1px solid rgba($color: #000000, $alpha: 0.1);
   border-left: 3px solid $mainBGColor;
   cursor: pointer;
+  background-color: #ffffff;
 }
 
 .advantage:hover,
@@ -60,7 +61,7 @@
   .advantage {
     min-height: 232px;
     padding: 67px 20px 19px 25px;
-
+    width: calc(50% - 30px);
     border-left-width: 2px;
   }
 
@@ -78,7 +79,6 @@
   .advantage {
     width: 100%;
     min-height: 232px;
-    max-width: 310px;
     padding: 69px 23px 23px 25px;
     letter-spacing: -0.01em;
   }

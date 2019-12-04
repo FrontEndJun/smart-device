@@ -1,0 +1,42 @@
+.white-bg {
+  background-image: url("../img/bg-rect-1.png"),
+    url("../img/bg-rect-2.png"),
+    url("../img/bg-rect-3.png"),
+    url("../img/bg-rect-4.png");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-position: 0 445px, 13% 45px, 53% 147px, calc(100% - 28px) 398px;
+
+  @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
+    background-image: url("../img/bg-rect-1@2x.png"),
+      url("../img/bg-rect-2@2x.png"),
+      url("../img/bg-rect-3@2x.png"),
+      url("../img/bg-rect-4@2x.png");
+    background-size: 30% auto, 18% auto, 45% auto, 17.5% auto;
+  }
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .white-bg {
+    background-image: url("../img/bg-rect-3.png");
+    background-size: auto;
+    background-position: -203% 37%;
+
+    @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
+      background-image: url("../img/bg-rect-3@2x.png");
+      background-size: 114% auto;
+      background-position: -195% 36%;
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .white-bg {
+    background-position: 22% 71%;
+
+    @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
+      background-size: 262% auto;
+      background-position: 21% 71%;
+    }
+  }
+}

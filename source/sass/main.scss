@@ -3,6 +3,10 @@
 *::after {
   box-sizing: inherit;
 }
+html {
+  overflow-x: hidden;
+
+}
 
 body {
   margin: 0;

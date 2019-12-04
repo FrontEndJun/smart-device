@@ -9,11 +9,12 @@
   padding-bottom: 10px;
   padding-left: 180px;
 
-  background: url("../img/year.png") no-repeat #ffffff;
+  background: url("../img/year.png") no-repeat transparent;
   background-position: -30px 5px;
 
   @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
     background-image: url("../img/year@2x.png");
+    background-size: 220px 316px;
   }
 }
 
@@ -57,11 +58,12 @@
   .about-company {
     padding-top: 25px;
     padding-bottom: 74px;
-    background: url("../img/year-tablet.png") no-repeat #ffffff;
+    background: url("../img/year-tablet.png") no-repeat;
     background-position: 0 23px;
 
     @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
       background-image: url("../img/year-tablet@2x.png");
+      background-size: 245px 360px;
     }
   }
 

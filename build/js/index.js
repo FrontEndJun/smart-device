@@ -59,13 +59,8 @@
         elm.addEventListener('input', function () {
           localStorage.setItem(elm.name, elm.value);
         });
-
-        if (localStorage.getItem(elm.name)) {
-          elm.value = localStorage.getItem(elm.name);
-        } else {
-          elm.focus();
-        }
       });
+      inputs[0].focus();
       modal.classList.remove('visually-hidden');
       modal.addEventListener('click', closeModalHandler);
       document.addEventListener('keydown', onEscModalCloseHandler);

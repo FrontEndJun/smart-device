@@ -3,14 +3,19 @@
   padding-bottom: 116px;
 
   background: $mainBGColor;
-  background-image: url("../img/plane.png"), url("../img/writeUsBG.png");
+  background-image: url("../img/plane.png"),
+    url("../img/write-us-rects.png"),
+    url("../img/write-us-rects-2.png");
   background-repeat: no-repeat;
-  background-position: calc(50% - 355px) 161px, calc(50% - 397px) -61px;
+  background-position: calc(50% - 355px) 161px,
+    calc(50% - 449px) -61px,
+    calc(100% + 10px) 35px;
 
   @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
     background-image: url("../img/plane@2x.png"),
-      url("../img/writeUsBG@2x.png");
-    background-size: auto, 670px 641px;
+      url("../img/write-us-rects@2x.png"),
+      url("../img/write-us-rects-2@2x.png");
+    background-size: auto, 670px 641px, 365px  670px;
   }
 }
 
@@ -111,7 +116,7 @@
 @media screen and (max-width: $tabletWidth) {
   .write-us {
     padding-top: 81px;
-    padding-bottom: 109px;
+    padding-bottom: 107px;
     background-image: none;
   }
 
@@ -132,7 +137,7 @@
   .write-us__content-wrapper {
     min-width: auto;
     width: 100%;
-    padding: 0 65px;
+    padding: 0 60px 0 66px;
   }
 
   .write-us__form {
