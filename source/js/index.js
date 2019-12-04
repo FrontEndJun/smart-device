@@ -3,7 +3,7 @@
 (function () {
   var ESC = 27;
   var toggleSection = document.querySelectorAll('.info__title');
-  var body = document.querySelector('body');
+  var body = document.querySelector('html');
   var telInputs = document.querySelectorAll('input[type="tel"]');
   telInputs.forEach(function (input) {
     return new window.IMask(input, {
@@ -77,6 +77,7 @@
         }
       });
       document.removeEventListener('keydown', onEscModalCloseHandler);
+      body.style.overflow = '';
     }
   }
 
@@ -89,7 +90,7 @@
     if (tg === closeButton || tg === overlay) {
       current.classList.add('visually-hidden');
       current.querySelector('#modal-form').reset();
-      body.style.overflow = 'auto';
+      body.style.overflow = '';
       document.removeEventListener('keydown', onEscModalCloseHandler);
     }
   }
