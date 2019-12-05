@@ -1,5 +1,24 @@
 .write-us-modal__inner {
-  padding: 33px 39px 36px;
+  box-sizing: border-box;
+  width: 490px;
+  padding: 30px 39px 30px;
+}
+
+.write-us-modal h2 {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 39px;
+}
+
+.write-us-modal p {
+  width: 90%;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 33px;
 }
 
 .write-us-modal__form {
@@ -22,7 +41,7 @@
 
   & textarea {
     width: 100%;
-    height: 154px;
+    height: 104px;
     overflow: auto;
     resize: none;
   }
@@ -31,7 +50,7 @@
   & textarea {
     box-sizing: border-box;
     margin-bottom: 30px;
-    padding: 12px 16px;
+    padding: 14px 16px;
 
     font-weight: normal;
     font-size: 16px;
@@ -51,6 +70,16 @@
     &:hover,
     &:focus {
       border-color: #ffffff;
+    }
+  }
+
+  label.checkbox {
+    padding-left: 50px;
+    width: 90%;
+
+    .checkbox__indicator {
+      top: 0;
+      left: 0;
     }
   }
 }

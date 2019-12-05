@@ -5,6 +5,9 @@
   background-position: center;
   background-size: cover;
   background-color: #1b2d37;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .service a:hover::after,
@@ -42,14 +45,6 @@
   border-top: none;
   border-left: none;
   transform: translateX(0) rotate(-45deg);
-}
-
-.service h3 {
-  max-width: 160px;
-  margin: 0;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
 }
 
 .service--ligth {

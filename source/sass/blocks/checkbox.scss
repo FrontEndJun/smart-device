@@ -59,8 +59,19 @@
     left: 10px;
   }
 }
+
 @media screen and (max-width: $phoneWidth) {
-  input {
+  .checkbox {
+    padding-left: 35px;
+    padding-top: 0;
+  }
+
+  .checkbox__indicator {
+    top: 3px;
+    left: 1px;
+  }
+
+  .checkbox input {
     display: none;
   }
 }

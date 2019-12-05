@@ -62,6 +62,10 @@
   font-size: 16px;
   line-height: 19px;
   color: $mainTextColor;
+
+  & .mobile-text {
+    display: none;
+  }
 }
 
 .promo__image-wrapper {
@@ -192,5 +196,13 @@
   .promo__button {
     margin-left: 0;
     max-width: 100%;
+
+    & .desktop-text {
+      display: none;
+    }
+
+    & .mobile-text {
+      display: initial;
+    }
   }
 }

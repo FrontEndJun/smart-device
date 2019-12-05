@@ -1,12 +1,13 @@
 'use strict';
-
+import './imask.js'
 (function () {
   var ESC = 27;
-  var toggleSection = document.querySelectorAll('.info__title');
+  var toggleSection = document.querySelectorAll('.info h3');
   var body = document.querySelector('html');
   var telInputs = document.querySelectorAll('input[type="tel"]');
+  document.querySelector('.js-promo-button-text')
   telInputs.forEach(function (input) {
-    return new window.IMask(input, {
+    return new IMask(input, {
       mask: '+{7}(000)000-00-00'
     });
   });

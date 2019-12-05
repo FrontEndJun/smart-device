@@ -15,7 +15,7 @@
 .services__link {
   display: block;
   min-height: 620px;
-  padding: 50px 45px;
+  padding: 50px 155px 50px 45px;
 
   color: $mainTextColor;
 }
@@ -49,6 +49,7 @@
   .services__link {
     min-height: 256px;
     padding-top: 38px;
+    padding-right: 510px;
   }
 
   .services__item {
@@ -73,6 +74,7 @@
 
   .services__link {
     padding: 20px 35px;
+    padding-right: 100px;
   }
 
   .services__item {
