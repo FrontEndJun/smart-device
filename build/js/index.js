@@ -1,7 +1,5 @@
 'use strict';
 
-import "./imask.js";
-
 (function () {
   var ESC = 27;
   var toggleSection = document.querySelectorAll('.info h3');
@@ -9,8 +7,12 @@ import "./imask.js";
   var telInputs = document.querySelectorAll('input[type="tel"]');
   document.querySelector('.js-promo-button-text');
   telInputs.forEach(function (input) {
-    return new IMask(input, {
-      mask: '+{7}(000)000-00-00'
+    input.addEventListener("input", function (e) {
+      var data = e.data;
+
+      if (!/[0-9]/.test(data)) {
+        e.target.value = e.target.value.substr(0, e.target.value.length - 1);
+      }
     });
   });
   var promoButton = document.querySelector('.promo__button');
@@ -99,15 +101,17 @@ import "./imask.js";
 
   function scrollTo(targetBox) {
     var to = targetBox.getBoundingClientRect().top + window.pageYOffset;
-    var duration = 1500;
+    var duration = 1.5;
     var start = performance.now();
     var dir = to - window.pageYOffset > 0 ? 1 : -1;
+    var step = Math.abs(to - window.pageYOffset) / duration;
     window.requestAnimationFrame(animatedScroll);
 
     function animatedScroll(time) {
       var timeFraction = Math.pow((time - start) / duration, 2);
 
       if (timeFraction > 1) {
+        window.scrollBy(0, to - pageYOffset);
         return;
       }
 
@@ -115,7 +119,6 @@ import "./imask.js";
         window.scrollBy(0, to - pageYOffset);
         return;
       } else {
-        var step = Math.abs(to - window.pageYOffset) * timeFraction;
         window.scrollBy(0, step * dir);
       }
 

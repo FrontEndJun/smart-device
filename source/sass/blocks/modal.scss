@@ -21,7 +21,7 @@
   z-index: 12;
   min-height: 605px;
   background: $mainBGColor;
-  transform: translate(-50%, calc(-45% + 10px));
+  transform: translate(-50%, -50%);
 }
 
 .modal__close {
