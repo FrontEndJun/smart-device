@@ -7,7 +7,7 @@
   var telInputs = document.querySelectorAll('input[type="tel"]');
   document.querySelector('.js-promo-button-text');
   telInputs.forEach(function (input) {
-    input.addEventListener("input", function (e) {
+    input.addEventListener('input', function (e) {
       var data = e.data;
 
       if (!/[0-9]/.test(data)) {

@@ -6,12 +6,12 @@
   var telInputs = document.querySelectorAll('input[type="tel"]');
   document.querySelector('.js-promo-button-text');
   telInputs.forEach(function (input) {
-    input.addEventListener("input", function (e) {
+    input.addEventListener('input', function (e) {
       var data = e.data;
       if (!/[0-9]/.test(data)) {
-        e.target.value = e.target.value.substr(0, e.target.value.length - 1)
+        e.target.value = e.target.value.substr(0, e.target.value.length - 1);
       }
-    })
+    });
   });
   var promoButton = document.querySelector('.promo__button');
   promoButton.addEventListener('click', function (e) {
