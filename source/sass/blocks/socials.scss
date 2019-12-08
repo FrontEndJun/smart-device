@@ -9,10 +9,10 @@
 .socials__item {
   display: block;
   margin-right: 16px;
-}
 
-.socials__item.last {
-  margin-right: 0;
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .socials__item a {

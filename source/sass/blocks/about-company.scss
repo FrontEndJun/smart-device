@@ -37,7 +37,7 @@
   font-style: normal;
   letter-spacing: 0.018em;
 
-  &.last {
+  &:last-of-type {
     margin-bottom: 38px;
   }
 }
@@ -97,7 +97,7 @@
 
     letter-spacing: 0;
 
-    &.last {
+    &:last-of-type {
       margin-bottom: 42px;
     }
   }
@@ -124,7 +124,7 @@
   .about-company p {
     margin-bottom: 41px;
 
-    &.last {
+    &:last-of-type {
       margin-bottom: 29px;
     }
   }
